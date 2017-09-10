@@ -27,6 +27,8 @@ public class LogController {
 			Principal principal) throws IOException {
 
 		logg.info(log.toString());
+		
+		response.setStatus(201);
 
 		return log;
 	}
